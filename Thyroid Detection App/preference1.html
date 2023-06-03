@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medicine Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image:url('main_background.jpg');
+      padding: 20px;
+    }
+
+    h1 {
+      color: #002633;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    p {
+      color: #002633;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .medicine-list {
+      margin-top: 20px;
+    }
+
+    .medicine-item {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Medicine Information</h1>
+
+  <div class="medicine-list">
+    <div class="medicine-item" id="medicine1">
+      <h2>Medicine</h2>
+      <p>Sometimes, getting too much or too little iodine also causes symptoms. Treatment often includes levothyroxine medication, which replaces the hormones that the thyroid should produce. This drug controls the symptoms of hypothyroidism, but it does not cure the condition</p>
+    </div>
+
+    <div class="medicine-item" id="medicine2">
+      <h2>Medicine</h2>
+      <p>No Medcines Required</p>
+      <p>Take Rest</p>
+    </div>
+
+    <div class="medicine-item" id="medicine3">
+      <h2>Medicine </h2>
+      <p>antithyroid drugs, which reduce the thyroid ability to make hormones</p>
+      <p>beta-blockers, which block the action of thyroid hormones</p>
+      <p>radioactive iodine, which damages thyroid cells in a controlled way</p>
+    </div>
+  </div>
+
+  <script>
+    // Get the level from the query parameters in the URL
+    var queryParams = new URLSearchParams(window.location.search);
+    var level = queryParams.get("level");
+
+    // Conditionally show the appropriate medicine based on the level
+    if (level === "low") {
+      document.getElementById("medicine1").style.display = "block";
+      document.getElementById("medicine2").style.display = "none";
+      document.getElementById("medicine3").style.display = "none";
+    } else if (level === "normal") {
+      document.getElementById("medicine1").style.display = "none";
+      document.getElementById("medicine2").style.display = "block";
+      document.getElementById("medicine3").style.display = "none";
+    } else if (level === "high") {
+      document.getElementById("medicine1").style.display = "none";
+      document.getElementById("medicine2").style.display = "none";
+      document.getElementById("medicine3").style.display = "block";
+    }
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>

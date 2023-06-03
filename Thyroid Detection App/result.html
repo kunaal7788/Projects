@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thyroid Detection - Results</title>
+    <link rel="stylesheet" type="text/css" href="result.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Thyroid Detection - Results</h1>
+      <div id="result"></div>
+    </div>
+    <script>
+      // Get query parameters from the URL
+      var queryParams = new URLSearchParams(window.location.search);
+      var t3Level = queryParams.get("t3Level");
+      var tt4Level = queryParams.get("tt4Level");
+      var t4uLevel = queryParams.get("t4uLevel");
+      var ftiLevel = queryParams.get("ftiLevel");
+
+      // Display the results
+      var result = document.getElementById("result");
+      result.innerHTML = `<p>T3 Level: ${t3Level}</p>
+                        <p>TT4 Level: ${tt4Level}</p>
+                        <p>T4U Level: ${t4uLevel}</p>
+                        <p>FTI Level: ${ftiLevel}</p>`;
+      
+</script>
+<footer>
+  <p>&copy; Project made by Kunal Digole.</p>
+</footer>
+  </body>
+</html>

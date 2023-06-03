@@ -1,0 +1,78 @@
+/* Styles for the body and container */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Styles for the header */
+  header {
+    background-color: #002633;
+    color: #fff;
+    padding: 30px;
+    
+  }
+  header h1 {
+    margin: 0;
+    font-size: 30px;
+    
+  }
+  
+  /* Styles for the main content */
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 10px;
+    font-size: 21px;
+    
+  }
+
+  .get-started-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #002633;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .get-started-button:hover {
+    background-color: #555;
+  }
+  
+  .right-image {
+    position: fixed;
+    top: 39%;
+    right: 0;
+    transform: translateY(-30%);
+    max-width: 35%;
+    height: auto;
+  }
+
+  main p {
+    font-size: 22px;
+    font-style:italic;
+    line-height: 2;
+  }
+  
+  /* Styles for the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 9px;
+    text-align: center;
+  }

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thyroid Detection</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="main-heading">Thyroid Detection App</h1>
+      <form>
+        <div class="form">
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="sex" id="gender-select">
+                <option disabled="disabled" selected="selected">Gender</option>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="on_thyroxine" id="thyroxine-select">
+                <option disabled="disabled" selected="selected">
+                  Thyroxine
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="query_on_thyroxine" id="query-thyroxine-select">
+                <option disabled="disabled" selected="selected">
+                  Any query on Thyroxine ?
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select
+                name="on_antithyroid_medication"
+                id="antithyroid-medication-select"
+              >
+                <option disabled="disabled" selected="selected">
+                  Do you take any antithyroid medication ?
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="sick" id="sick-select">
+                <option disabled="disabled" selected="selected">
+                  Are you sick ?
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="pregnant" id="pregnant-select">
+                <option disabled="disabled" selected="selected">
+                  Are you pregnant ?
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="thyroid_surgery" id="thyroid-surgery-select">
+                <option disabled="disabled" selected="selected">
+                  Have you had thyroid surgery ?
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="i131_treatment" id="i131-treatment-select">
+                <option disabled="disabled" selected="selected">
+                  Have you ever had I-131 treatment ?
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="query_hypothyroid" id="hypothyroid-query-select">
+                <option disabled="disabled" selected="selected">
+                  Any query on Hypothyroid ?
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="query_hyperthyroid" id="hyperthyroid-query-select">
+                <option disabled="disabled" selected="selected">
+                  Any query on Hyperthyroid ?
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="lithium" id="lithium-select">
+                <option disabled="disabled" selected="selected">
+                  Do you have Lithium ?
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="goitre" id="goitre-select">
+                <option disabled="disabled" selected="selected">
+                  Do you have Goitre ?
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="tumor" id="tumor-select">
+                <option disabled="disabled" selected="selected">
+                  Do you have Tumor ?
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="hypopituitary" id="hypopituitary-select">
+                <option disabled="disabled" selected="selected">
+                  Do you have hypopituitary ?
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+              <select name="psych" id="psych-select">
+                <option disabled="disabled" selected="selected">
+                  Do you have any Psychological Symptoms ?
+                </option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+              <div class="select-dropdown"></div>
+            </div>
+          </div>
+          <br />
+          <h2>Enter Test Results</h2>
+          <div class="input-container">
+            <label for="t3">T3:</label>
+            <input type="text" id="t3" name="t3" placeholder="Enter T3 value" />
+          </div>
+          <div class="input-container">
+            <label for="tt4">TT4:</label>
+            <input
+              type="text"
+              id="tt4"
+              name="tt4"
+              placeholder="Enter TT4 value"
+            />
+          </div>
+          <div class="input-container">
+            <label for="t4u">T4U:</label>
+            <input
+              type="text"
+              id="t4u"
+              name="t4u"
+              placeholder="Enter T4U value"
+            />
+          </div>
+          <div class="input-container">
+            <label for="fti">FTI:</label>
+            <input
+              type="text"
+              id="fti"
+              name="fti"
+              placeholder="Enter FTI value"
+            />
+          </div>
+
+          <button id="submitBtn">Predict</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="result"></div>
+    <footer>
+      <p>&copy; Project made by Kunal Digole.</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
