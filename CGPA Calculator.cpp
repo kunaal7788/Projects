@@ -125,3 +125,5 @@ float inputValidation(const string& prompt) {
     cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clear the rest of the line
     return input;
 }
+
+//CGPA Calculator by Kunal Digole 
